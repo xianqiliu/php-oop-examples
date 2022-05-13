@@ -40,9 +40,14 @@ class Emp
 
 $emp = new Emp();
 
+// Before:
 //$emp->empName = "Alice";
+// After:
 $emp->setEmpName("Alice");
+
+// Before:
 //$emp->empAge = 22;
+// After:
 $emp->setEmpAge(22);
 
 // Before:

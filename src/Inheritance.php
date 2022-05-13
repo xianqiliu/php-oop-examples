@@ -22,10 +22,10 @@ class Dog extends Animal
 
     public function intro(): string
     {
-        return "I am ".$this->name."\n";
+        return "I am ".$this->name."\n"; // the protected variable in parent class is visible to subclass
     }
 }
 
 $dog = new Dog();
-echo $dog->hey();
-echo $dog->intro();
+echo $dog->hey(); // bonjour!
+echo $dog->intro(); // I am Animal

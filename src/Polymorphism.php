@@ -2,18 +2,18 @@
 
 interface People
 {
-    public function greet();
+    public function greet(); // Only method list, no implement details
 }
 
 abstract class PeopleAgain
 {
-    public function sayGoodbye()
+    public function sayGoodbye() // Can include implement details
     {
         echo "Bye!"."\n";
     }
 }
 
-class English extends PeopleAgain implements People
+class English extends PeopleAgain implements People // Can extend an abstract and implement an interface at the same time
 {
     public function greet()
     {
